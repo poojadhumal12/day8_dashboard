@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+
+                <img src="../assests/images/image.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#" class="active">Billings</a></li>
+                    <li><a href="#">Invoices</a></li>
+                    <hr>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+                <p>Information about your current plan and usages</p>
+            </header>
+            <section class="stats">
+                <div class="stat-card">
+                    <h4>Projects</h4>
+                    <p>3</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Requests</h4>
+                    <p>3456</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Users</h4>
+                    <p>3</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Storage</h4>
+                    <p>128/500 GB</p>
+                </div>
+            </section>
+            <section class="charts">
+                <div class="chart-card">
+                    <h4>API Calls in last 6 hours</h4>
+                    <canvas id="apiCallsChart"></canvas>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-card pie-chart">
+                        <h4>P&L</h4>
+                        <canvas id="plChart"></canvas>
+                    </div>
+                    <div class="current-plan-card">
+                        <h5>Current Plan</h5>
+                        <p id="p1">Information and usages of your current plan</p>
+                        <div class="plan-info">
+                            <div class="plan-icon">
+                                <img src="../assests/images/user.png" alt="User Icon">
+                            </div>
+                            <div class="plan-details">
+                                <p>Teams Plan</p>
+                                <p class="price">$99/mo</p>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="label">Projects</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 33%; background-color: orange;"></div>
+                            </div>
+                            <div class="count">1/3</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="label">Users</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 20%; background-color: purple;"></div>
+                            </div>
+                            <div class="count">1/5</div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="label">Requests/day</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 75%; background-color: red;"></div>
+                            </div>
+                            <div class="count">7.5k/10k</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="activity-sidebar">
+            <div class="date-box">
+                <p>Wednesday, 17 May 2021</p>
+            </div>
+            <h4 style="text-align: center;">Activity</h4>
+            <ul>
+                <li class="ll1">
+                <!-- <div class="profileimg">
+                <img src="../assests/images/man1.png" height="40" width="40" >
+                </div> -->
+                    <p>James Anderson</p>
+                    <br>
+                    <p>Called "Books-API" with the JavaScript webhook and commented.</p>
+                </li>
+                <hr>
+                <li class="l1">
+                    <p>Victor Sam</p>
+                    <br>
+                    <p>Called "Books-API" with the JavaScript webhook and commented.</p>
+                </li>
+                <hr>
+                <li class="l1">
+                    <p>Nether Stone</p>
+                    <br>
+                    <p>Called "Books-API" with the JavaScript webhook and commented.</p>
+                </li>
+                <hr>
+                <li class="l1">
+                    <p>Jeff Sussex</p>
+                    <br>
+                    <p>Called "Books-API" with the JavaScript webhook and commented.</p>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <script src="../script/login.js"></script>
+</body>
+</html>
+
